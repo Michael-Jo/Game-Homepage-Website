@@ -12,15 +12,15 @@ app.get('/', (req, res) => {
     res.sendFile('templates/index.html', { root:__dirname});
 });
 
-app.get('/about', (req, res) => {
+app.get('/solo', (req, res) => {
     res.sendFile('', );
 });
 
 app.get('/about-us', (req, res) => {
-    res.redirect('about');
+    res.redirect('solo');
 });
 
-app.get('/contact', (req, res) => {
+app.get('/coop', (req, res) => {
     // res.redirect('contact');
 });
 
