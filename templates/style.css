@@ -4,3 +4,57 @@ body {
     width: 100vw;
     font-family: 'Pixelify Sans';
 }
+
+a {
+    font-style: normal;
+    text-decoration: none;
+}
+
+h1 {
+    padding-top: 5vh;
+    font-size: 10vh;
+    color: white;
+}
+
+span.line {
+    padding: 2vh 0;
+    height: 1vh;
+    width: 10vw;
+    color: white;
+}
+
+div.map {
+    padding-top: 5vh;
+    font-size: 5vh;
+}
+
+div.map a {
+    color: white;
+}
+
+div.map a:hover{
+    color: red;
+}
+
+div.map a.unclickable{
+    color: gray;
+}
+
+div.map a.unclickable:hover{
+    color: gray;
+}
+
+nav.bottom {
+    position: sticky;
+    left: 5vw;
+    top: 90vw;
+    font-size: 5vh;
+}
+
+nav.bottom a {
+    color: white;
+}
+
+nav.bottom:hover {
+    color: red;
+}
