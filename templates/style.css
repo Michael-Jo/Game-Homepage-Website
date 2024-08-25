@@ -12,6 +12,15 @@ a {
 
 h1 {
     padding-top: 5vh;
+    padding-left: 5vw;
+    font-size: 10vh;
+    color: white;
+}
+
+h2 {
+    position: sticky;
+    left: 95vw;
+    top: 5vh;
     font-size: 10vh;
     color: white;
 }
@@ -25,6 +34,7 @@ span.line {
 
 div.map {
     padding-top: 5vh;
+    padding-left: 5vw;
     font-size: 5vh;
 }
 
@@ -47,7 +57,7 @@ div.map a.unclickable:hover{
 nav.bottom {
     position: sticky;
     left: 5vw;
-    top: 90vw;
+    top: 90vh;
     font-size: 5vh;
 }
 
@@ -57,4 +67,10 @@ nav.bottom a {
 
 nav.bottom:hover {
     color: red;
+}
+
+div.socials {
+    position: sticky;
+    left: 90vw;
+    top: 90vh;
 }
