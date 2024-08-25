@@ -1,4 +1,4 @@
-import express from 'express'; // butuh file express terinstall untuk bekerja (npm install express) dan butuh internet untuk install, node app.js pergi ke 127.0.1:3000 di layar 404 (127.0.1:3000/insert-anything-invalid-here) untuk kumpul
+import express from 'express';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 
