@@ -9,6 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
 </head>
+<script>
+    function closeWindow() {
+        if (confirm("Are you sure you want to close this tab?")) {
+            window.close(); //won't actually close for some reason
+        }
+    }
+</script>
 <body>
     <h1>MAIN MENU</h1>
     <h2>2. 0. 0-indev+202408114071902</h2>
@@ -17,6 +24,11 @@
         <!-- <a href="/">Main Menu</a> -->
         <a href="/solo">Solo</a>
         <a href="/coop">Cooperative</a>
+        <span class="line"></span>
+        <a href="/settings">Settings</a>
+        <a href="/credits">Credits</a>
+        <span class="line"></span>
+        <button onclick="closeWindow()" class="deleteYourselfNow">Exit</button>
     </nav>
 
     <div class="socials">

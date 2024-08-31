@@ -20,6 +20,14 @@ app.get('/coop', (req, res) => {
     res.sendFile('templates/coop.html', { root:__dirname});
 });
 
+app.get('/settings', (req, res) => {
+    res.sendFile('templates/settings.html', { root:__dirname});
+});
+
+app.get('/credits', (req, res) => {
+    res.sendFile('templates/credits.html', { root:__dirname});
+});
+
 // app.get('/about-us', (req, res) => {
 //     res.redirect('solo');
 // });
