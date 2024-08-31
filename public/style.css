@@ -1,5 +1,7 @@
 body {
-    background-image: 'assets:/bg.png';
+    background-image: radial-gradient(white, white, gray, black, black);
+    /* background-repeat: no-repeat;
+    background-size: cover; */
     height: 100vh;
     width: 100vw;
     font-family: 'Pixelify Sans';
@@ -18,10 +20,18 @@ h1 {
 }
 
 h2 {
-    position: sticky;
-    left: 95vw;
+    position: absolute;
+    left: 75vw;
     top: 5vh;
-    font-size: 10vh;
+    font-size: 3vh;
+    color: yellow;
+}
+
+nav.link a {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 2vw;
+    font-size: 5vh;
     color: white;
 }
 
@@ -33,6 +43,8 @@ span.line {
 }
 
 div.map {
+    display: flex;
+    flex-direction: column;
     padding-top: 5vh;
     padding-left: 5vw;
     font-size: 5vh;
@@ -70,7 +82,7 @@ nav.bottom:hover {
 }
 
 div.socials {
-    position: sticky;
+    position: absolute;
     left: 90vw;
-    top: 90vh;
+    top: 85vh;
 }
