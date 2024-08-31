@@ -13,20 +13,24 @@ app.get('/', (req, res) => {
 });
 
 app.get('/solo', (req, res) => {
-    res.sendFile('', );
-});
-
-app.get('/about-us', (req, res) => {
-    res.redirect('solo');
+    res.sendFile('templates/solo.html', { root:__dirname});
 });
 
 app.get('/coop', (req, res) => {
-    // res.redirect('contact');
+    res.sendFile('templates/coop.html', { root:__dirname});
 });
 
+// app.get('/about-us', (req, res) => {
+//     res.redirect('solo');
+// });
+
 // middle ware
+app.use(express.static('public'));
 app.use('/', (req, res) => {
     res.status(404).send('<h1>404, oops not found</h1>')
 });
 
-app.listen(3000);
+const PORT = 3000;
+app.listen(PORT, () => {
+    console.log(`Server is running on http://127.0.0.1:${PORT}`);
+});
