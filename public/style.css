@@ -86,3 +86,7 @@ div.socials {
     left: 90vw;
     top: 85vh;
 }
+
+div.socials img {
+    height: 10vh;
+}
