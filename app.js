@@ -28,6 +28,10 @@ app.get('/credits', (req, res) => {
     res.sendFile('templates/credits.html', { root:__dirname});
 });
 
+app.get('/achievement', (req, res) => {
+    res.sendFile('templates/achievement.html', { root:__dirname});
+});
+
 // app.get('/about-us', (req, res) => {
 //     res.redirect('solo');
 // });
